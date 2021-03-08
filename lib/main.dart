@@ -11,9 +11,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Movies',
-      theme: ThemeData(
-        primarySwatch: Colors.greenAccent[400],
-      ),
       home: Container(),
     );
   }
