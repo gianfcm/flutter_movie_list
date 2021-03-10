@@ -10,7 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   json_annotation: ^4.0.0
-  get: ^3.26.0
+  get: ^4.0.0-nullsafety.2
+  http: ^0.13.0
 
 dev_dependencies:
   flutter_test:

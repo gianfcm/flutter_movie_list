@@ -6,6 +6,18 @@ import 'package:get/get.dart';
 class MoviesView extends StatelessWidget {
 
 
+  Widget container({required MovieController c}){
+    return Container(
+      height: 300,
+      width: 300,
+      alignment: Alignment.center,
+      child: TextButton(
+        onPressed: (){c.movieService.getMovies();},
+        child: Text("Press"),
+      ),
+    );
+  }
+
   Widget list(){
     return ListView();
   }
@@ -13,11 +25,11 @@ class MoviesView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    final MovieController c = Get.put(MovieController());
+    final MovieController c = Get.put(MovieController())!;
 
     return Scaffold(
       appBar: AppBar(title: Text("List of Movies"),),
-      body: list(),
+      body: container(c: c)
     );
   }
 

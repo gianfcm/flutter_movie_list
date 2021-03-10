@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_movie_list/screens/movies/movies_view.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Movies',
-      home: Container(),
+      home: MoviesView(),
     );
   }
 }
